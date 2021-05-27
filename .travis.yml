@@ -7,3 +7,10 @@ before_install:
 
 script:
   - docker run -e CI=true juanmiguelar/docker-react npm run test
+
+notifications:
+  email:
+    recipients:
+      - juanmiguelar09@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
